@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>記数法 | recollection</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/jquery.min.js"></script>
+	<script src="../common/foundation.js"></script>
+
+	<!-- style favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="numerals.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="recollection">
+	<header>
+		<div id="header-content">
+			<a href="https://miramiku.github.io/" id="page-info">
+				<span id="meta-info" class="page-headings"></span>
+				<span id="major-title" class="page-headings">記数法</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Numerals</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li>
+						<a href="http://miramiku.github.io/"><span class="basis-icon me"></span>みく(๑˃̵ᴗ˂̵)</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/miramiku"><span class="basis-icon tw"></span>@miramiku</a>
+					</li>
+					<li>
+						<a href="https://github.com/miramiku/miramiku.github.io"><span class="basis-icon gh"></span>Repository</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="egyptian">古代エジプトの数字（ヒエログリフ）</h3>
+				<p>
+					紀元前 3000 年ごろ成立。<br>
+					1 ～ 1,000,000（9,999,999）まで表現可能。<br>
+					以下にユニコードにグリフが存在する 1 ～ 90,000 まで記載。
+				</p>
+				<table id="egyptian-numerals" class="tabular">
+					<tbody>
+						<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+						<tr><td>&#x133FA;</td><td>&#x133FB;</td><td>&#x133FC;</td><td>&#x133FD;</td><td>&#x133FE;</td><td>&#x133FF;</td><td>&#x13400;</td><td>&#x13401;</td><td>&#x13402;</td></tr>
+						<tr><td>U+133FA</td><td>U+133FB</td><td>U+133FC</td><td>U+133FD</td><td>U+133FE</td><td>U+133FF</td><td>U+13400</td><td>U+13401</td><td>U+13402</td></tr>
+						<tr><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td></tr>
+						<tr><td>&#x13386;</td><td>&#x13387;</td><td>&#x13388;</td><td>&#x13389;</td><td>&#x1338A;</td><td>&#x1338B;</td><td>&#x1338C;</td><td>&#x1338D;</td><td>&#x1338E;</td></tr>
+						<tr><td>U+13386</td><td>U+13387</td><td>U+13388</td><td>U+13389</td><td>U+1338A</td><td>U+1338B</td><td>U+1338C</td><td>U+1338D</td><td>U+1338E</td></tr>
+						<tr><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td><td>600</td><td>700</td><td>800</td><td>900</td></tr>
+						<tr><td>&#x13362;</td><td>&#x13363;</td><td>&#x13364;</td><td>&#x13365;</td><td>&#x13366;</td><td>&#x13367;</td><td>&#x13368;</td><td>&#x13369;</td><td>&#x1336A;</td></tr>
+						<tr><td>U+13362</td><td>U+13363</td><td>U+13364</td><td>U+13365</td><td>U+13366</td><td>U+13367</td><td>U+13368</td><td>U+13369</td><td>U+1336A</td></tr>
+						<tr><td>1,000</td><td>2,000</td><td>3,000</td><td>4,000</td><td>5,000</td><td>6,000</td><td>7,000</td><td>8,000</td><td>9,000</td></tr>
+						<tr><td>&#x131BC;</td><td>&#x131BD;</td><td>&#x131BE;</td><td>&#x131BF;</td><td>&#x131C0;</td><td>&#x131C1;</td><td>&#x131C2;</td><td>&#x131C3;</td><td>&#x131C4;</td></tr>
+						<tr><td>U+131BC</td><td>U+131BD</td><td>U+131BE</td><td>U+131BF</td><td>U+131C0</td><td>U+131C1</td><td>U+131C2</td><td>U+131C3</td><td>U+131C4</td></tr>
+						<tr><td>10,000</td><td>20,000</td><td>30,000</td><td>40,000</td><td>50,000</td><td>60,000</td><td>70,000</td><td>80,000</td><td>90,000</td></tr>
+						<tr><td>&#x130AD;</td><td>&#x130AE;</td><td>&#x130AF;</td><td>&#x130B0;</td><td>&#x130B1;</td><td>&#x130B2;</td><td>&#x130B3;</td><td>&#x130B4;</td><td>&#x130B5;</td></tr>
+						<tr><td>U+130AD</td><td>U+130AE</td><td>U+130AF</td><td>U+130B0</td><td>U+130B1</td><td>U+130B2</td><td>U+130B3</td><td>U+130B4</td><td>U+130B5</td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="egyptian-1">その他の位と絵文字の表すもの</h4>
+
+				<table id="egyptian-degits">
+					<thead>
+						<tr><th>位</th><th>ユニコード</th><th>グリフ</th><th>読み</th><th>意味</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>1 の位</td><td>U+133FA</td><td>&#x133FA;</td><td>ウァ</td><td>棒１本</td></tr>
+						<tr><td>10 の位</td><td>U+13386</td><td>&#x13386;</td><td>メジュ</td><td>牛の脚を縛る紐</td></tr>
+						<tr><td>100 の位</td><td>U+13362</td><td>&#x13362;</td><td>シェト</td><td>ロープ</td></tr>
+						<tr><td>1000 の位</td><td>U+131BC</td><td>&#x131BC;</td><td>カァ</td><td>ハスの花</td></tr>
+						<tr><td>万の位</td><td>U+130AD</td><td>&#x130AD;</td><td>ジャバァ</td><td>人の指１本</td></tr>
+						<tr><td>十万の位</td><td>U+13190</td><td>&#x13190;</td><td>ヘフェヌ</td><td>おたまじゃくし</td></tr>
+						<tr><td>百万の位<br>または<br>それ以上</td><td>U+13068</td><td>&#x13068;</td><td>ヘフ</td><td>天空を支える神（ヘフ）</td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="egyptian-2">記法</h4>
+				<p>
+					原則的に大きい位から小さな位の順に記載する。
+					それぞれの位においても大きさや配置は決まっていないため見た目にバランスよく配置すればよい。
+					ただし、ヒエログリフは象形文字の向きによって左から右、右から左、上から下の方向から記載できることに留意。
+					記載の例としてベルリンの壁が崩壊した年（1989）を左から右方向に記載すると <span style="font-size: 38px; font-weight: bold; line-height: 1;">&#x131BC;&#x1336A;&#x1338D;&#x13402;</span> といったようになる。ただしユニコードで表現しようとすると一部のグリフを除き配置が固定されているため表現は固定されてしまう。
+				</p>
+
+				<h3 id="babylonian">古代メソポタミアの数字（楔形文字）</h3>
+				<p>
+					紀元前 2000 年ごろ成立。<br>
+					60 進法のため固有のグリフは 1 ～ 59 までの<a src="https://ja.wikipedia.org/wiki/%E4%BD%8D%E5%8F%96%E3%82%8A%E8%A8%98%E6%95%B0%E6%B3%95">位取り記数法</a>（説明省略）。
+					<img src="babylonian-numerals.png" alt="バビロニア数字" style="box-shadow: none;">[public-domain]
+				</p>
+
+				<h3 id="greek">ギリシャの数字</h3>
+				<p>
+					アッティカ式とイオニアの式というものがあるが、ここではイオニア式について。
+					アッティカ式は現代では使われていないが、イオニア式は現代ギリシャでも使用されている。
+					1 の位、10 の位、100 位それぞれ違う文字を使うため合計 27 の文字を使用する。
+				</p>
+
+				<table id="greek-numerals">
+					<thead>
+						<tr><th>数字</th><th>文字</th><th>読み</th><th>数字</th><th>文字</th><th>読み</th><th>数字</th><th>文字</th><th>読み</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>1</td><td>α</td><td>アルファ</td><td>10</td><td>ι</td><td>イオタ</td><td>100</td><td>ρ</td><td>ロー</td></tr>
+						<tr><td>2</td><td>β</td><td>ベータ</td><td>20</td><td>κ</td><td>カッパ</td><td>200</td><td>σ</td><td>シグマ</td></tr>
+						<tr><td>3</td><td>γ</td><td>ガンマ</td><td>30</td><td>λ</td><td>ラムダ</td><td>300</td><td>τ</td><td>タウ</td></tr>
+						<tr><td>4</td><td>δ</td><td>デルタ</td><td>40</td><td>μ</td><td>ミュー</td><td>400</td><td>υ</td><td>ユプシロン</td></tr>
+						<tr><td>5</td><td>ε</td><td>イプシロン</td><td>50</td><td>ν</td><td>ニュー</td><td>500</td><td>φ</td><td>ファイ</td></tr>
+						<tr><td>6</td><td>ϛ</td><td>ワウ</td><td>60</td><td>ξ</td><td>クサイ</td><td>600</td><td>χ</td><td>カイ</td></tr>
+						<tr><td>7</td><td>ζ</td><td>ゼータ</td><td>70</td><td>ο</td><td>オミクロン</td><td>700</td><td>ψ</td><td>プサイ</td></tr>
+						<tr><td>8</td><td>η</td><td>エータ</td><td>80</td><td>π</td><td>パイ</td><td>800</td><td>ω</td><td>オメガ</td></tr>
+						<tr><td>9</td><td>θ</td><td>シータ</td><td>90</td><td>ϙ</td><td>コッパ</td><td>900</td><td>ϡ</td><td>サン</td></tr>
+					</tbody>
+				</table>
+
+				<p>
+					6 / 90 / 900 を表す文字 ( ϛ, ϙ, ϡ ) は現代のギリシャ文字では使用されていない。
+					1000 より大きな数字は直前にギリシャ数詞用の左下の点 ͵ (U+0375) を入れる。
+					また、現代では数字であることを区別するために最後にギリシャ数詞用の右上の点 ʹ (U+0374) を打つ。
+					第１回近代オリンピックが開催された年 (1896) を表記すると ͵αωϙϛʹ となる。
+					万の位以降も同様に点を打って表現できるが、現代ギリシャでは 4 桁以上は通常、算用数字を用いている。
+					1 / 10 / 100 の位でそれぞれ異なる文字を使用しているので順序は問われないこともある。
+					例えばローマ帝国が東西に分裂した年 (395) を表記すると τϙεʹ(300 + 90 + 5) や ϙετʹ(90 + 5 + 300) とも表現は可能である。
+				</p>
+
+				<h3 id="romanian">ローマの数字</h3>
+				<p>
+					現代でも序数などで用いられている表記法はヴィクトリア朝時代 (1837 - 1901) に成立した（意外と新しい）。<br>
+					7 種類 ( I, V, X, L, C, D, M ) のラテン文字で表現する。
+				</p>
+
+				<table>
+					<tbody>
+						<tr><td>アラビア数字</td><td>1</td><td>5</td><td>10</td><td>50</td><td>100</td><td>500</td><td>1000</td></tr>
+						<tr><td>ローマ数字</td><td>I</td><td>V</td><td>X</td><td>L</td><td>C</td><td>D</td><td>M</td></tr>
+					</tbody>
+				</table>
+
+				<p>
+					これ以外の数字は<strong>可算</strong>で表現する。<br>
+					たとえば 3 は ( 1 + 1 + 1 ) なので I を 3 回書いて<strong>III</strong>となる。<br>
+					できるだけ文字数が少ないように選び、左から大きな数字を書いていく。<br>
+					1837 をローマ数字で表現するならば ( 1000 + 500 + 100 + 100 + 100 + 10 + 10 + 10 + 5 + 1 + 1 ) に分解し<strong>MDCCCXXXVII</strong>となる。
+				</p>
+				<p>
+					ただし、同じ文字を 4 つ以上連続で並べる事ができないため<strong>減算則</strong>というものを用いて、減ずる事を意味させるため大きな数字の左に小さな数字を置く。
+				</p>
+
+				<table>
+					<tbody>
+						<tr><td>アラビア数字</td><td>4</td><td>9</td><td>40</td><td>90</td><td>400</td><td>900</td></tr>
+						<tr><td>ローマ数字</td><td>IV</td><td>IX</td><td>XL</td><td>XC</td><td>CD</td><td>CM</td></tr>
+					</tbody>
+				</table>
+
+				<p>
+					もっとも大きな数字は M (1000) であり、4 つ以上連続して記載できないため 4000 以上の値は表現できない（この規則によらない歴史的な表記法ならば可能）。
+				</p>
+
+				<div class="boxed">
+					1980 年代ぐらいまでは映画などの著作権表記にローマ数字が用いられていたようです。
+					たとえば 1989 をローマ数字で表すと <strong>MCMLXXXIX</strong> となります。
+					なんとなく表記をやめた理由が分かった気がする <span style="font-size: 26px; font-weight: bold; line-height: 1;">&#x13068;</span>
+				</div>
+
+				<h3 id="chainise">漢数字</h3>
+				<p>
+					殷の時代（紀元前 17 世紀頃 - 紀元前 1046 年）から存在する現存する最古の漢字<strong>甲骨文字</strong>から存在した表記法。
+					零・〇は唐（618 年 - 907 年）以降から用いられていると考えられている。
+				</p>
+
+				<h4 id="chainise-1">表記法</h4>
+				<p>
+					十分ご存じですよね？省略。
+				</p>
+
+				<h3 id="indian">インドの数字</h3>
+				<p>
+					６世紀までに成立。
+					インドの文字<a href="https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%8A%E3%83%BC%E3%82%AC%E3%83%AA%E3%83%BC">デーヴァナーガリー</a>にて用いられた数字。
+					インドからアラビアに伝わり、さらにアラビアからヨーロッパに伝わって現在用いられている算用数字の字形になっている。
+				</p>
+				<p>
+					アラビア語は通常右から左へ文字を書くが、数字だけは右から左に書く。
+					インド系言語が左から右に文字を書いていたためである。
+				</p>
+				<p>
+					ペルシャ語で用いられているペルシャ数字とアラビア語で用いられているアラビア・インド数字は 4 / 5 / 6 の字形が少し異なる。
+				</p>
+
+				<h4 id="indian-1">デーヴァナーガリー数字</h4>
+				<table class="arabic-numerals">
+					<thead>
+						<tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>&#x966;</td><td>&#x967;</td><td>&#x968;</td><td>&#x969;</td><td>&#x96A;</td><td>&#x96B;</td><td>&#x96C;</td><td>&#x96D;</td><td>&#x96E;</td><td>&#x96F;</td></tr>
+						<tr><td>U+966</td><td>U+967</td><td>U+968</td><td>U+969</td><td>U+96A</td><td>U+96B</td><td>U+96C</td><td>U+96D</td><td>U+96E</td><td>U+96F</td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="indian-2">ペルシア数字</h4>
+				<table class="arabic-numerals">
+					<thead>
+						<tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>&#x06F0;</td><td>&#x06F1;</td><td>&#x06F2;</td><td>&#x06F3;</td><td>&#x06F4;</td><td>&#x06F5;</td><td>&#x06F6;</td><td>&#x06F7;</td><td>&#x06F8;</td><td>&#x06F9;</td></tr>
+						<tr><td>U+06F0</td><td>U+06F1</td><td>U+06F2</td><td>U+06F3</td><td>U+06F4</td><td>U+06F5</td><td>U+06F6</td><td>U+06F7</td><td>U+06F8</td><td>U+06F9</td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="indian-3">アラビア・インド数字</h4>
+				<table class="arabic-numerals">
+					<thead>
+						<tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>&#x0660;</td><td>&#x0661;</td><td>&#x0662;</td><td>&#x0663;</td><td>&#x0664;</td><td>&#x0665;</td><td>&#x0666;</td><td>&#x0667;</td><td>&#x0668;</td><td>&#x0669;</td></tr>
+						<tr><td>U+0660</td><td>U+0661</td><td>U+0662</td><td>U+0663</td><td>U+0664</td><td>U+0665</td><td>U+0666</td><td>U+0667</td><td>U+0668</td><td>U+0669</td></tr>
+					</tbody>
+				</table>
+			</article>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li>
+				<a href="#egyptian">古代エジプトの数字（ヒエログリフ）</a>
+				<ul>
+					<li><a href="#egyptian-1">その他の位と絵文字の表すもの</a></li>
+					<li><a href="#egyptian-2">記法</a></li>
+				</ul>
+			</li>
+			<li><a href="#babylonian">古代メソポタミアの数字（楔形文字）</a></li>
+			<li><a href="#greek">ギリシャの数字</a></li>
+			<li><a href="#romanian">ローマの数字</a></li>
+			<li>
+				<a href="#chainise">漢数字</a>
+				<ul>
+					<li><a href="#chainise-1">表記法</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#indian">インドの数字</a>
+				<ul>
+					<li><a href="#indian-1">デーヴァナーガリー数字</a></li>
+					<li><a href="#indian-2">ペルシア数字</a></li>
+					<li><a href="#indian-3">アラビア・インド数字</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>

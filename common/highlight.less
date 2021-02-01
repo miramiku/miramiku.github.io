@@ -1,0 +1,47 @@
+// out: highlight.css, compress: true
+
+@import "color-scheme";
+
+@background: #505050;
+@foreground: #f6f3e8;
+@undefined:  @LunarRock;
+
+@keyword:  #dfc47d;
+@comment:  #7f9f7f;
+@number:   #d68686;
+@literal:  #d68686;
+@built_in: #d6d7Af;
+@string:   #c89191;
+@regexp:   @undefined;
+@function: #d68686;
+@title:    @undefined;
+@params:   #9b859d;
+@pi:       @undefined;
+
+.hljs {
+	background:    fade( @background, 95% );
+	border:        none;
+	border-radius: 5px;
+	color:         @foreground;
+	display:       block;
+	line-height:   1.2;
+	margin:        0 40px;
+	overflow-x:    auto;
+	padding:       10px;
+
+	&::selection, ::selection {
+		background: fade( #c0c0c0, 30% );
+	}
+}
+
+	.hljs-keyword  { color: @keyword;  }
+	.hljs-comment  { color: @comment;  }
+	.hljs-number   { color: @number;   }
+	.hljs-literal  { color: @literal;  }
+	.hljs-built_in { color: @built_in; }
+	.hljs-string   { color: @string;   }
+	.hljs-regexp   { color: @regexp;   }
+	.hljs-function { color: @function; }
+	.hljs-title    { color: @title;    }
+	.hljs-params   { color: @params;   }
+	.hljs-pi       { color: @pi;       }

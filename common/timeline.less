@@ -1,0 +1,110 @@
+// out: null
+@import "color-scheme.less";
+
+@timeline: fade( @RiverBlue, 40% );
+
+@font-face {
+	font-family: "icons";
+	font-style:  normal;
+	font-weight: normal;
+	src: url( "timeline-icons.woff" ) format( "woff" ),
+		 url( "timeline-icons.svg" )  format( "svg" );
+}
+
+@width: 645px;
+
+.timeline( @size, @skipa: 15px, @skipb: 30px ) {
+	// mix-in
+	.item( @c ) {
+		&::before {
+			content:      @c;
+			font-family:  icons;
+			margin-right: 10px;
+		}
+	}
+	.divider( @c ) {
+		background:    fade( @c, 15% );
+		border-radius: 4px;
+		color:         @subColor;
+		display:       block;
+		line-height:   1;
+		margin-bottom: 5px;
+		padding:       4px 8px 4px @size + 25px;
+	}
+
+	article .timeline {
+		clear:       both;
+		padding-top: 10px;
+		position:    relative;
+		&::before {
+			background: @timeline;
+			bottom:     0;
+			content:    "";
+			left:       @size;
+			position:   absolute;
+			top:        0;
+			width:      2px;
+		}
+		a {
+			background: none;
+			color: inherit;
+			padding: 0;
+		}
+	}
+		.content {
+			overflow:      hidden;
+			position:      relative;
+			ul {
+				clear:         none;
+				display:       block;
+				float:         left;
+				margin-bottom: @skipb;
+				margin-left:   0;
+				margin-top:    12px;
+				padding-left:  25px;
+				padding-top:   @skipa;
+				width:         @width - @size;
+				li {
+					background:    none;
+					clear:         both;
+//					padding-left:  25px;
+//					text-indent:  -25px;
+					padding-left:  0;
+					text-indent:   0;
+					ul {
+						margin-bottom: 20px;
+						margin-top: 0;
+						padding-top: 0;
+					}
+				}
+				ul {
+					width: @width - @size - 25px;
+					ul {
+						width: @width - @size - 50px;
+					}
+				}
+			}
+			&::before {
+				background:    @timeline;
+				border-radius: 4px;
+				bottom:        0;
+				content:       "";
+				height:        8px;
+				left:          @size;
+				margin-left:   -3px;
+				position:      absolute;
+				top:           9px;
+				width:         8px;
+			}
+		}
+			.date {
+				color:   @subColor;
+				display: block;
+				float:   left;
+				width:   @size;
+			}
+//			.log     { .item( "\e208" ); }
+			.imple   { .item( "\e28a" ); }
+			.change  { .item( "\e27f" ); }
+			.fix     { .item( "\e991" ); }
+}

@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>ランダウの記法 | recollection</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/jquery.min.js"></script>
+	<script src="../common/foundation.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config( {
+			displayAlign: "left",
+			tex2jax: {
+				inlineMath:  [ [ "$",  "$"  ], [ "\(", "\)" ] ],
+				displayMath: [ [ "$$", "$$" ], [ "\[", "\]" ] ],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: [ "script", "noscript", "style", "textarea", "pre" ],
+				TeX: {
+					equationNumbers: {
+						autoNumber: "AMS"
+					},
+					extensions: [ "AMSmath.js", "AMSsymbols.js" ]
+				}
+			},
+			"HTML-CSS": {
+				availableFonts: [],
+				preferredFont: null,
+				webFont: "Neo-Euler"
+			}
+		} );
+	</script>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+	<!-- style favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="recollection">
+	<header>
+		<div id="header-content">
+			<a href="https://miramiku.github.io/" id="page-info">
+				<span id="meta-info" class="page-headings"></span>
+				<span id="major-title" class="page-headings">ランダウの記法</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Landau Notation</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li>
+						<a href="http://miramiku.github.io/"><span class="basis-icon me"></span>みく(๑˃̵ᴗ˂̵)</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/miramiku"><span class="basis-icon tw"></span>@miramiku</a>
+					</li>
+					<li>
+						<a href="https://github.com/miramiku/miramiku.github.io"><span class="basis-icon gh"></span>Repository</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<p>
+					たまに参照したくなる時があるのでメモ書き。<br>
+					ランダウの記法の種類と定義。
+				</p>
+
+				<h3 id="family">Family of Landau notations</h3>
+
+				<h4 id="bo">(O)-notation ((Big Oh))</h4>
+				<p>
+					[
+					O(g(n)) = \{ f(n) : 0 \leq f(n) \leq c \cdot g(n) \quad (\exists c > 0, \exists n_0 > 0, \forall n > n_0) \}
+					]
+				</p>
+
+				<h4 id="somega">(\Omega)-notation ((Big Omega))</h4>
+				<p>
+					[
+					\Omega(g(n)) = \{ f(n) : 0 \leq c \cdot g(n) \leq f(n) \quad (\exists c > 0, \forall n_0 > 0, \forall n > n_0) \}
+					]
+				</p>
+
+				<h4 id="btheta">(\Theta)-notation ((Big Theta))</h4>
+				<p>
+					[
+					\Theta(g(n)) = \{ f(n) : 0 \leq c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n) \quad (\exists c_1 > 0, \exists c_2 > 0, \exists n_0 > 0, \forall n > n_0) \}
+					]
+				</p>
+
+				<h4 id="so">(o)-notation ((Small Oh))</h4>
+				<p>
+					[
+					o(g(n)) = \{ f(n) : 0 \leq f(n) \leq c \cdot |g(n)| \quad (\forall c > 0, \exists n_0 > 0, \forall n \geq n_0) \}
+					]
+				</p>
+
+				<h4 id="somega">(\omega)-notation ((Small Omega))</h4>
+				<p>
+					[
+					\omega(g(n)) = \{ f(n) : 0 \leq c \cdot g(n) < f(n) \quad (\forall c> 0, \exists n_0 > 0, \forall n \geq n_0) \}
+					]
+				</p>
+
+				<h3 id="notation">留意事項</h3>
+				<p>
+					分野によって慣習が違うので注意が必要な時がある。
+					(O(g(n))) を使っていながら上記の定義上 (\Omega(g(n))) や (\Theta(g(n))) であったりするので記号を鵜呑みせず文脈から読み解く必要がある。
+				</p>
+				<p>
+					アルゴリズムを評価する時において (O)-notation では厳密性にかけてしまう。
+					そのため出来る限り (\Theta )-notation 以上で評価したい。
+				</p>
+				<p>
+					もっとも、何をおっしゃってるのか私にはさっぱりわかりませんですがね ((´・ω・))
+				</p>
+			</article>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#family">Family of Landau notations</a>
+				<ul>
+					<li><a href="#bo">Big Oh</li>
+					<li><a href="#somega">Big Omega</li>
+					<li><a href="#btheta">(Big Theta</li>
+					<li><a href="#so">Small Oh</li>
+					<li><a href="#somega">Small Omega</li>
+				</ul>
+			</li>
+			<li><a href="#notation">留意事項</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+</html>
